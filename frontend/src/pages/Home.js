@@ -1,9 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { useNavigate } from "react-router-dom";
 import headerImg from '../assets/img/qrResume.png';
 import '../App.css';
 
 export const Home = () => {
+  const navigate = useNavigate();
+
+  const goToProjects = () => {
+    navigate("/projects");
+  };
+
   return (
     <section className="banner" id="home">
       <Container>
@@ -15,7 +22,7 @@ export const Home = () => {
                 <p>These experiences have not only strengthened my technical skills but also developed my teamwork capabilities and adaptability to ever-evolving challenges.</p>
                 <p>This website showcases my projects, skills, and experiences, providing an insight into my journey in the software engineering realm. Thank you for your time and for visiting my site!</p>
                 <div className="my-projects">
-                  <button className="btn-projects" onClick={() => window.location.href = '/projects'}>to My Projects.. <ArrowRightCircle size={25} /></button>
+                  <button className="btn-projects" onClick={goToProjects}>to My Projects.. <ArrowRightCircle size={25} /></button>
                 </div>
               </div>
           </Col>
