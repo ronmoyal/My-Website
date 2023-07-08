@@ -9,7 +9,7 @@ const ContactMe = () => {
 
     const onSubmitSignIn = (event) => {
         event.preventDefault(); // prevent form from submitting
-        fetch('http://localhost:5000/contact', {
+        fetch('https://moyalron-backend.onrender.com/contact', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -18,6 +18,7 @@ const ContactMe = () => {
                 message: message
             })
         })
+        
         .then(response => response.json())
         .then(data => {
             if(data === 'the message was sent successfully!') {
