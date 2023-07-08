@@ -6,9 +6,11 @@ const ContactMe = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [alertVisible, setAlertVisible] = useState(false);
+    const [isSending, setIsSending] = useState(false);
 
     const onSubmitSignIn = (event) => {
         event.preventDefault(); // prevent form from submitting
+        setIsSending(true);
         fetch('https://moyalron-backend.onrender.com/contact', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
@@ -21,6 +23,7 @@ const ContactMe = () => {
         
         .then(response => response.json())
         .then(data => {
+            setIsSending(false);
             if(data === 'the message was sent successfully!') {
                 setAlertVisible(true);
                 setName('');
@@ -31,12 +34,16 @@ const ContactMe = () => {
             }
         })
         .catch(error => {
+            setIsSending(false);
             console.error('Error:', error);
         });
     };
 
     return (
         <div className="contact-form">
+            {isSending && 
+                <div className="alert">Sending your message...</div>
+            }
             {alertVisible && 
                 <div className="alert">Your message has been sent successfully!</div>
             }
