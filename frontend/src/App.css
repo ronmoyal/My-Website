@@ -217,6 +217,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .banner {
+    min-height: 105vh; /* For mobile */
+    flex-direction: column;
+  }
+
+
+  .Logo{
+    font-size: 2rem;
+    color:#ffffff;
+  }
+
+  .btn-projects
+  {
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    display: block; 
+    margin: auto; 
+    margin-bottom: 20px;
+    margin-top: 25px;
+  }
+}
+
+
 
 /************ Projects Css ************/
 .project {
