@@ -236,14 +236,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 1.2rem;
     display: block; 
     margin: auto; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
-  .my-image {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 45%; /* Smaller image */
-}
+
 
 .my-name{
   font-size: 2rem;
