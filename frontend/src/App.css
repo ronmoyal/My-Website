@@ -154,6 +154,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+
 /* home */
 
  .Logo{
@@ -214,10 +215,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   color: #f88379;
   font-size: 1rem;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1170px) {
   .banner {
     min-height: 105vh; /* For mobile */
     flex-direction: column;
@@ -236,11 +237,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: block; 
     margin: auto; 
     margin-bottom: 20px;
-    margin-top: 25px;
   }
+
+  .my-image {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 45%; /* Smaller image */
 }
 
+.my-name{
+  font-size: 2rem;
+}
 
+}
 
 /************ Projects Css ************/
 .project {
