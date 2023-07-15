@@ -27,10 +27,11 @@ export const Home = () => {
               </div>
           </Col>
           <Col xs={12} md={6} xl={5}>
-              <div>
                 <div className="image-overlay">
                   <h2 className="image-title">Scan Me for My Resume</h2>
                 </div>
+                
+                <div>
                 <img src={headerImg} alt="Header Img" className="my-image" />
               </div>
           </Col>
