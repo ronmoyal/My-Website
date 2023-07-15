@@ -13,7 +13,7 @@ export const Home = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
+      <Container className="home-container">
         <Row >
           <Col xs={12} md={6} xl={7}>
               <div>
