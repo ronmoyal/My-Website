@@ -202,6 +202,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 10%;
   margin-left: 100px;
   box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
+  position: relative;
 
 }
 
@@ -219,7 +220,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   color: #f88379;
   font-size: 1rem;
-  margin-top: 45px;
+  margin-top: 40px;
 }
 
 @media screen and (max-width: 760px) {
@@ -251,6 +252,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 2rem;
 }
 
+.te
+.my-image{
+  position: relative;
+  margin-top: 40px;
+}
 }
 
 /************ Projects Css ************/
