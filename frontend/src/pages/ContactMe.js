@@ -83,8 +83,9 @@ const ContactMe = () => {
                         required
                     />
                 </div>
-
-                <button type="submit">Submit</button>
+                {!isSending && !alertVisible && (
+                    <button type="submit">Submit</button>
+                )}
             </form>
         </div>
     );
