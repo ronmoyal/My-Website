@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import { useNavigate } from "react-router-dom";
-import headerImg from '../assets/img/resume.png';
+import headerImg from '../assets/img/resumeNew.png';
 import '../App.css';
 
 export const Home = () => {
