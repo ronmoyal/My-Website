@@ -222,7 +222,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 40px;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1024px) {
   .banner {
     height: 100%;
     flex-direction: column;
@@ -252,7 +252,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .my-image{
-  margin-top: 10%;
+  margin-top: 7%;
 }
 }
 
