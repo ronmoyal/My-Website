@@ -11,10 +11,14 @@
   color: #00abf0;
 }
 
+.aboutme{
+  font-size: 18px
+}
+
 
 .web-development-title {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 27px;
+  font-weight: 500;
   margin-bottom: 3%;
   color: #00abf0;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactMe.css';
+import Button from '../shared/Elements/Button';
 
 const ContactMe = () => {
     const [name, setName] = useState('');
@@ -20,7 +21,6 @@ const ContactMe = () => {
                 message: message
             })
         })
-        
         .then(response => response.json())
         .then(data => {
             setIsSending(false);
@@ -83,9 +83,11 @@ const ContactMe = () => {
                         required
                     />
                 </div>
-                {!isSending && !alertVisible && (
-                    <button type="submit">Submit</button>
-                )}
+                <div className="btn-contact">
+                    {!isSending && !alertVisible && (
+                        <Button type="submit">Submit</Button>
+                    )}
+                </div>
             </form>
         </div>
     );
