@@ -1,25 +1,30 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Contact from './components/Contact';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import ContactMe from './pages/ContactMe';
-import './App.css';
+
+import NavLinks from './shared/Nevigation/NavLinks';
+import Details from './Details/Details';
+/* import Home from './pages/Home';
+ */
+import MainPage from './Home/page/MainPage';
+import Projects from './Projects/ProjectList';
+import ContactMe from './ContactMe/ContactMe';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <NavLinks className="navbar-expand" /> {/* Add the className here */}
         <Routes>
-        <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="/home" element={<MainPage />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
-        <Contact/>
+
+        <Details />
       </Router>
     </div>
   );

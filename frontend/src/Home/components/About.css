@@ -1,0 +1,41 @@
+.banner {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin-left: 9%;
+}
+
+.highlight {
+  color: #00abf0;
+}
+
+
+.web-development-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 3%;
+  color: #00abf0;
+}
+
+.place-item__actions {
+  padding: 1rem;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+  
+  .highlight {
+    font-size: 40px;
+  }
+  
+  .web-development-title {
+    margin-bottom: 25px;
+  }
+
+
+  
+}

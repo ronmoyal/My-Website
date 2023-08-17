@@ -1,0 +1,36 @@
+.main-page {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 1rem;
+}
+
+.skills {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main-page {
+        flex-direction: row;
+    }
+
+    .about {
+        width: 60%;
+        text-align: left;
+
+    }
+    .skills {
+        width: 40%;
+    }
+}

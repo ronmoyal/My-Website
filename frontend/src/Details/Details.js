@@ -2,9 +2,9 @@ import React from 'react';
 import { Grid, Typography, IconButton } from '@material-ui/core';
 import { MdPhone, MdPlace } from 'react-icons/md';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import '../App.css';
+import './Details.css';
 
-const Contact = () => {
+const Details = () => {
   return (
     <div className="root">
       <Grid container spacing={3} className="grid">
@@ -45,4 +45,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Details;

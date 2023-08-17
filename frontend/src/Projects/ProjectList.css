@@ -1,0 +1,29 @@
+.project {
+  position: relative;
+  margin-top: -12px;
+}
+
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.project-item {
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
