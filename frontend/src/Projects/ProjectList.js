@@ -9,6 +9,8 @@ import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.jpg"; 
 import projImg5 from "../assets/img/project-img5.jpg"; 
 import projImg6 from "../assets/img/project-img6.jpg"; 
+import projImg7 from "../assets/img/project-img7.jpg"; 
+
 import { Container } from "react-bootstrap";
 
 const ProjectList = props => {
@@ -22,6 +24,18 @@ const ProjectList = props => {
     
         },
         {
+          title: "Warehouse",
+          description: "web application for academic equipment management using MERN stack (MongoDB, Express.js, React.js, Node.js), featuring multi-user role functionality and mobile compatibility.",
+          imgUrl: projImg4,
+          link:"https://github.com/ronmoyal/Warehouse",
+        },
+        {
+          title: "WeTravel",
+          description: "Web application using the MERN stack (MongoDB, Express.js, React.js, Node.js). This platform focuses on sharing and discovering public places, allowing users to recommend and explore various locations while also providing location details and reviews.",
+          imgUrl: projImg7,
+          link:"https://github.com/ronmoyal/WeTravel",
+        },
+        {
           title: "BookFlight",
           description: "ASP.NET MVC web application for travel agency management, enabling admins to manage flights and users to book seats. Technologies used include C#, HTML, CSS, and Microsoft SQL Server for data storage.",
           imgUrl: projImg2,
@@ -32,12 +46,6 @@ const ProjectList = props => {
           description: "Full Stack Face Detecting App with API, React, NodeJs, ExpressJs, MongoDB &Authentication system. It can detect faces through image URLs",
           imgUrl: projImg3,
           link:"https://github.com/ronmoyal/SmartBrain",
-        },
-        {
-          title: "Warehouse",
-          description: "web application for academic equipment management using MERN stack (MongoDB, Express.js, React.js, Node.js), featuring multi-user role functionality and mobile compatibility.",
-          imgUrl: projImg4,
-          link:"https://github.com/ronmoyal/Warehouse",
         },
         {
           title: "BloodTest",

@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavLinks from './shared/Nevigation/NavLinks';
-import Details from './Details/Details';
 import MainPage from './Home/page/MainPage';
 import Projects from './Projects/ProjectList';
 import ContactMe from './ContactMe/ContactMe';
@@ -21,7 +20,6 @@ function App() {
           <Route path="/contact" element={<ContactMe />} />
         </Routes>
 
-        <Details />
       </Router>
     </div>
   );

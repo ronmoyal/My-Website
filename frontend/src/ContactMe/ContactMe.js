@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ContactMe.css';
 import Button from '../shared/Elements/Button';
+import Details from '../Details/Details';
 
 const ContactMe = () => {
     const [name, setName] = useState('');
@@ -40,6 +41,7 @@ const ContactMe = () => {
     };
 
     return (
+        <React.Fragment>   
         <div className="contact-form">
             {isSending && 
                 <div className="alert">Sending your message...</div>
@@ -90,6 +92,9 @@ const ContactMe = () => {
                 </div>
             </form>
         </div>
+        
+        <Details />
+                    </React.Fragment>   
     );
 };
 
