@@ -22,7 +22,9 @@
 
 @media (min-width: 768px) {
     .main-page {
-        flex-direction: row;
+        display: flex;
+        overflow: hidden;
+
     }
 
     .about {
