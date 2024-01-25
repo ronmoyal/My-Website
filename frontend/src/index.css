@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+
 }
 
 code {
@@ -61,3 +62,4 @@ input:focus, textarea:focus, select:focus {
 	src: url('./assets/font/CentraNo2-Book.ttf');
 	font-weight: 400;
 }
+
