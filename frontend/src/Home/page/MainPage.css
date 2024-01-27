@@ -23,7 +23,7 @@
 @media (min-width: 768px) {
     .main-page {
         display: flex;
-        overflow: hidden;
+        flex-direction:row;
 
     }
 
