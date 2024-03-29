@@ -1,4 +1,3 @@
-
 import React from "react";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -16,7 +15,10 @@ const MainPage = () => {
                 <Skills />
             </div>
         </div>
+        <div className="details-main">
             <Details />
+        </div>
+
         </React.Fragment>        
     );
 };
